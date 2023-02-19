@@ -37,6 +37,13 @@ algorithm's structure intact.
 
 ##### Key parts from example
 
+Running code:-
+
+    PizzaMaker vegPizzaMaker = new VegPizzaMaker();
+    vegPizzaMaker.makePizza();
+    PizzaMaker inHouseAssortedPizzaMaker = new InHouseAssortedPizzaMaker();
+    inHouseAssortedPizzaMaker.makePizza();
+
 Algorithm is in the abstract parent class:-
 
     public abstract class PizzaMaker {
@@ -86,12 +93,6 @@ Pizza is packed by default:-
         System.out.println("Adding mozzerella cheese and tomato sauce along with ingredients to crust.");
     }
 
-Running code:-
-
-    PizzaMaker vegPizzaMaker = new VegPizzaMaker();
-    vegPizzaMaker.makePizza();
-    PizzaMaker inHouseAssortedPizzaMaker = new InHouseAssortedPizzaMaker();
-    inHouseAssortedPizzaMaker.makePizza();
 
 ### Factory Method Design Pattern
 
@@ -107,6 +108,8 @@ Java APIs + frameworks extensively use the factory method pattern.
 The factory method pattern helps encapsulate object creation code from client code, decoupling your client code from the
 concrete classes you need to instantiate. Using this pattern you will have a centralized location for object creation
 code - easier to debug + troubleshoot.
+
+##### Key parts from example
 
     @Test
     public void testMakePizzas(){
